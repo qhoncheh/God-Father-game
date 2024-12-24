@@ -1,0 +1,894 @@
+body {
+  margin: 0;
+  direction: rtl;
+}
+#holder {
+  border: 1px solid black;
+  display: none;
+  width: 1534px;
+  height: 700px;
+  margin: auto;
+  cursor: url(../img/icons/cursor.png), auto;
+}
+#home {
+  /* border: 1px solid rgb(0, 21, 255); */
+
+  height: 700px;
+  background: url(../img/bg/bg01.jpg);
+  font-family: Bhoma;
+  color: #fff;
+  font-style: inherit;
+}
+#home > .top {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 100px;
+  padding-top: 10px;
+  display: flex;
+  gap: 28px;
+}
+#home > .top > #menu {
+  border: 1px solid rgb(210, 119, 63);
+  display: block;
+  width: 50px;
+  height: 37px;
+  background: linear-gradient(
+    to bottom,
+    rgb(118, 44, 60) 0%,
+    rgb(157, 46, 24) 80%,
+    rgb(205, 203, 69) 190%
+  );
+  border-radius: 10%;
+  margin-right: 5px;
+  cursor: pointer;
+}
+#home > .top > #menu > .icon {
+  width: 47px;
+  height: 40px;
+  background: url(../img/icons/menu.png) no-repeat 30% 50%;
+  background-size: 70% 100%;
+}
+
+#home > .top > #menu > #dark1 {
+  border: 1px solid black;
+  width: 1550px;
+  height: 700px;
+  background: rgba(10, 10, 10, 0.7);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 20;
+  display: none;
+}
+#home > .top > #menu > #subMenu {
+  border: 3px solid rgb(141, 57, 57);
+  width: 320px;
+  height: 400px;
+  background: rgb(255, 211, 216);
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  z-index: 100;
+  border-radius: 5%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  display: none;
+  transition: 0.5s;
+}
+#home > .top > #menu > #subMenu > .items {
+  border: 1px solid rgb(255, 115, 0);
+  width: 100px;
+  height: 65px;
+  background: #881f1f;
+  border-radius: 15%;
+  margin: 10px;
+  position: relative;
+}
+#home > .top > #menu > #subMenu > .items > .img {
+  /* border: 1px solid black; */
+  width: 99%;
+  height: 65%;
+}
+#home > .top > #menu > #subMenu > .items > .img > img {
+  margin-right: 25px;
+  margin-top: 3px;
+}
+#home > .top > #menu > #subMenu > .items > .item {
+  /* border: 1px solid black; */
+  width: 99%;
+  height: 33%;
+  color: white;
+  text-shadow: 3px 3px 1px black;
+  text-align: center;
+  font-size: 13px;
+}
+#home > .top > #menu > #dark1 > #settings {
+  border: 5px solid rgb(111, 33, 11);
+  display: none;
+  height: 400px;
+  width: 600px;
+  background: rgb(248, 221, 197);
+  position: absolute;
+  right: 461px;
+  top: 55px;
+  border-radius: 15px;
+}
+#home > .top > #menu > #dark1 > #settings > .top {
+  border-top: 4px solid rgba(253, 252, 251, 0.65);
+  border-left: 4px solid rgba(253, 252, 251, 0.65);
+  border-right: 4px solid rgba(253, 252, 251, 0.65);
+  height: 15%;
+  border-radius: 15px 15px 0 0;
+  text-align: center;
+  line-height: 60px;
+  font-family: bhoma;
+  color: rgb(253, 248, 208);
+  font-size: 25px;
+  text-shadow: 1px -2px 0px black;
+  position: relative;
+  background: linear-gradient(
+    to left,
+    rgb(111, 33, 11) 0%,
+    rgb(187, 87, 44) 100%,
+    rgb(111, 33, 11) 40%
+  );
+}
+#home > .top > #menu > #dark1 > #settings > .top > #exit {
+  /* border: 1px solid #000; */
+  height: 30px ;
+  width: 30px;
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  background: url(../img/icons/exit.png) no-repeat;
+  background-size: contain;
+}
+
+
+#home > .top > #menu > #dark1 > #settings > .bottom {
+  border: 1px solid #ccc;
+  height: 80%;
+}
+#home > .top > #menu > #dark1 > #settings > .bottom > .items1 {
+  /* border: 1px solid black; */
+  height: 77px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+#home > .top > #menu > #dark1 > #settings > .bottom > .items1 > #volume,
+#home > .top > #menu > #dark1 > #settings > .bottom > .items1 > #music {
+  /* border: 1px solid red; */
+  height: 90px;
+  width: 140px;
+  text-align: center;
+  line-height: 0px;
+  text-shadow: 1px -2px 0px black;
+  font-size: 15px;
+  position: relative;
+}
+#home
+  > .top
+  > #menu
+  > #dark1
+  > #settings
+  > .bottom
+  > .items1
+  > #volume 
+  > .switch {
+  font-size: 15px;
+  position: relative;
+  display: inline-block;
+  width: 90px;
+  height: 31px;
+}
+#home
+  > .top
+  > #menu
+  > #dark1
+  > #settings
+  > .bottom
+  > .items1
+  > #volume
+  > .switch
+  > .voise {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+#home
+  > .top
+  > #menu
+  > #dark1
+  > #settings
+  > .bottom
+  > .items1
+  > #volume
+  > .switch
+  > .itemsVolume {
+  /* border: 1px solid red; */
+  position: absolute;
+  right: -2px;
+  top: 2px;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  background-color: #373737;
+  border-radius: 5px;
+  transition: 0.4s;
+  text-transform: uppercase;
+  font-weight: 700;
+  overflow: hidden;
+  box-shadow: -0.3em 0 0 0 #373737, -0.3em 0.3em 0 0 #373737,
+    0.3em 0 0 0 #373737, 0.3em 0.3em 0 0 #373737, 0 0.3em 0 0 #373737;
+  text-shadow: none;
+}
+#home
+  > .top
+  > #menu
+  > #dark1
+  > #settings
+  > .bottom
+  > .items1
+  > #volume
+  > .switch
+  > .itemsVolume
+  > .rightVolume {
+  position: absolute;
+  display: flex;
+  width: 50%;
+  height: 88%;
+  background-color: rgb(132, 97, 71);
+  color: #373737;
+  left: 0;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  transform-origin: right;
+  transform: rotateX(10deg);
+  transform-style: preserve-3d;
+  transition: all 150ms;
+}
+#home
+  > .top
+  > #menu
+  > #dark1
+  > #settings
+  > .bottom
+  > .items1
+  > #volume
+  > .switch
+  > .itemsVolume
+  > .rightVolume::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgb(206, 206, 206);
+  transform-origin: center left;
+  transform: rotateY(90deg);
+}
+
+#home
+  > .top
+  > #menu
+  > #dark1
+  > #settings
+  > .bottom
+  > .items1
+  > #volume
+  > .switch
+  > .itemsVolume
+  > .rightVolume::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgb(112, 112, 112);
+  transform-origin: center bottom;
+  transform: rotateX(90deg);
+}
+#home
+  > .top
+  > #menu
+  > #dark1
+  > #settings
+  > .bottom
+  > .items1
+  > #volume
+  > .switch
+  > .itemsVolume
+  > .leftVolume {
+  position: absolute;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  width: 50%;
+  height: 88%;
+  background-color: rgb(132, 97, 71);
+  color: rgb(206, 206, 206);
+  right: 1px;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  transform-origin: left;
+  transform: rotateX(10deg) rotateY(-45deg);
+  transform-style: preserve-3d;
+  transition: all 150ms;
+  text-shadow: rgb(75, 239, 60) 2px 0 5px;
+}
+
+#home
+  > .top
+  > #menu
+  > #dark1
+  > #settings
+  > .bottom
+  > .items1
+  > #volume
+  > .switch
+  > .itemsVolume
+  > .leftVolume::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgb(206, 206, 206);
+  transform-origin: center right;
+  transform: rotateY(-90deg);
+  text-shadow: none;
+}
+
+#home
+  > .top
+  > #menu
+  > #dark1
+  > #settings
+  > .bottom
+  > .items1
+  > #volume
+  > .switch
+  > .itemsVolume
+  > .leftVolume::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgb(112, 112, 112);
+  transform-origin: center bottom;
+  transform: rotateX(90deg);
+}
+#home
+  > .top
+  > #menu
+  > #dark1
+  > #settings
+  > .bottom
+  > .items1
+  > #volume
+  > .switch
+  input:checked
+  + .itemsVolume
+  > .rightVolume {
+  transform: rotateX(10deg) rotateY(45deg);
+  color: rgb(206, 206, 206);
+}
+
+#home
+  > .top
+  > #menu
+  > #dark1
+  > #settings
+  > .bottom
+  > .items1
+  > #volume
+  > .switch
+  input:checked
+  + .itemsVolume
+  > .leftVolume {
+  transform: rotateX(10deg) rotateY(0deg);
+  color: #52db48;
+}
+#home
+  > .top
+  > #menu
+  > #dark1
+  > #settings
+  > .bottom
+  > .items1
+  > #music 
+  > .switch1 {
+  font-size: 15px;
+  position: relative;
+  display: inline-block;
+  width: 90px;
+  height: 31px;
+}
+#home
+  > .top
+  > #menu
+  > #dark1
+  > #settings
+  > .bottom
+  > .items1
+  > #music
+  > .switch1
+  > .voise1 {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+#home
+  > .top
+  > #menu
+  > #dark1
+  > #settings
+  > .bottom
+  > .items1
+  > #music
+  > .switch1
+  > .itemsMusic {
+  /* border: 1px solid red; */
+  position: absolute;
+  right: -2px;
+  top: 2px;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  background-color: #373737;
+  border-radius: 5px;
+  transition: 0.4s;
+  text-transform: uppercase;
+  font-weight: 700;
+  overflow: hidden;
+  box-shadow: -0.3em 0 0 0 #373737, -0.3em 0.3em 0 0 #373737,
+    0.3em 0 0 0 #373737, 0.3em 0.3em 0 0 #373737, 0 0.3em 0 0 #373737;
+  text-shadow: none;
+}
+#home
+  > .top
+  > #menu
+  > #dark1
+  > #settings
+  > .bottom
+  > .items1
+  > #music
+  > .switch1
+  > .itemsMusic
+  > .rightMusic {
+  position: absolute;
+  display: flex;
+  width: 50%;
+  height: 88%;
+  background-color: rgb(132, 97, 71);
+  color: #373737;
+  left: 0;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  transform-origin: right;
+  transform: rotateX(10deg);
+  transform-style: preserve-3d;
+  transition: all 150ms;
+}
+#home
+  > .top
+  > #menu
+  > #dark1
+  > #settings
+  > .bottom
+  > .items1
+  > #music
+  > .switch1
+  > .itemsMusic
+  > .rightMusic::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgb(206, 206, 206);
+  transform-origin: center left;
+  transform: rotateY(90deg);
+}
+
+#home
+  > .top
+  > #menu
+  > #dark1
+  > #settings
+  > .bottom
+  > .items1
+  > #music
+  > .switch1
+  > .itemsMusic
+  > .rightMusic::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgb(112, 112, 112);
+  transform-origin: center bottom;
+  transform: rotateX(90deg);
+}
+#home
+  > .top
+  > #menu
+  > #dark1
+  > #settings
+  > .bottom
+  > .items1
+  > #music
+  > .switch1
+  > .itemsMusic
+  > .leftMusic {
+  position: absolute;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  width: 50%;
+  height: 88%;
+  background-color: rgb(132, 97, 71);
+  color: rgb(206, 206, 206);
+  right: 1px;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  transform-origin: left;
+  transform: rotateX(10deg) rotateY(-45deg);
+  transform-style: preserve-3d;
+  transition: all 150ms;
+  text-shadow: rgb(75, 239, 60) 2px 0 5px;
+}
+
+#home
+  > .top
+  > #menu
+  > #dark1
+  > #settings
+  > .bottom
+  > .items1
+  > #music
+  > .switch1
+  > .itemsMusic
+  > .leftMusic::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgb(206, 206, 206);
+  transform-origin: center right;
+  transform: rotateY(-90deg);
+  text-shadow: none;
+}
+
+#home
+  > .top
+  > #menu
+  > #dark1
+  > #settings
+  > .bottom
+  > .items1
+  > #music
+  > .switch1
+  > .itemsMusic
+  > .leftMusic::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgb(112, 112, 112);
+  transform-origin: center bottom;
+  transform: rotateX(90deg);
+}
+#home
+  > .top
+  > #menu
+  > #dark1
+  > #settings
+  > .bottom
+  > .items1
+  > #music
+  > .switch1
+  input:checked
+  + .itemsMusic
+  > .rightMusic {
+  transform: rotateX(10deg) rotateY(45deg);
+  color: rgb(206, 206, 206);
+}
+
+#home
+  > .top
+  > #menu
+  > #dark1
+  > #settings
+  > .bottom
+  > .items1
+  > #music
+  > .switch1
+  input:checked
+  + .itemsMusic
+  > .leftMusic {
+  transform: rotateX(10deg) rotateY(0deg);
+  color: #52db48;
+}
+
+
+
+#home > .top > #menu > #dark1 > #settings > .bottom > .items2 {
+  border: 2px solid rgb(109, 92, 84);
+  height: 230px;
+  margin: 16px;
+  background: rgb(183, 150, 139);
+  border-radius: 15px;
+  box-shadow: inset 10px 14px 28px rgba(0, 0, 0, 0.25),
+    10px 14px 10px rgba(0, 0, 0, 0.22);
+}
+#home > .top > #menu > #dark1 > #settings > .bottom > .items2 > .up {
+  /* border: 1px solid #ccc; */
+  border-bottom: 2px solid #37373753;
+  height: 90px;
+  margin: 0px 10px 0px 10px;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 40px;
+  
+}
+#home > .top > #menu > #dark1 > #settings > .bottom > .items2 > .up > .accountName{
+  /* border: 1px solid #000; */
+  height: 50px;
+  width: 200px;
+  background: linear-gradient(
+    to bottom,
+    
+    rgb(242, 250, 3) 74%,
+    rgba(111, 33, 11, 0) 0%,
+    rgb(236, 134, 13) 80%,
+  );}
+
+#home > .top > #menu > #dark1 > #settings > .bottom > .items2 > .up > .gameProducer{
+  /* border: 1px solid #000; */
+  height: 80px;
+  width: 250px;
+  padding-right: 5px;
+}
+#home > .top > #menu > #dark1 > #settings > .bottom > .items2 > .up > .gameProducer > h3 {
+  margin: 0px;
+  font-family: bhoma;
+  font-size: 15px;
+  color: #373737;
+}
+
+#home > .top > #mony,
+#home > .top > #diamond {
+  /* border: 1px solid rgb(170, 13, 13); */
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  display: flex;
+  background: rgba(10, 10, 10, 0.8);
+  margin-right: 10px;
+}
+#home > .top > #diamond > .seke,
+#home > .top > #mony > .seke {
+  /* border: 1px solid red; */
+  width: 50px;
+  height: 40px;
+  position: relative;
+  bottom: 10px;
+}
+#home > .top > #diamond > .seke {
+  background: url(../img/icons/almas.png) no-repeat;
+  background-size: 100% 100%;
+}
+#home > .top > #mony > .seke {
+  background: url(../img/icons/seke.png) no-repeat;
+  background-size: 100% 100%;
+}
+#home > .top > #diamond > .name,
+#home > .top > #mony > .name {
+  /* border: 1px solid black; */
+  width: 100px;
+  height: 28px;
+  position: relative;
+  right: 40px;
+  color: wheat;
+  font-size: 20px;
+}
+#home > .top > #diamond > .plas,
+#home > .top > #mony > .plas {
+  /* border: 1px solid red; */
+  width: 40px;
+  height: 30px;
+  background: url(../img/icons/Awicons-Vista-Artistic-Add.48.png);
+  background-size: 100% 100%;
+  position: relative;
+  right: 20px;
+}
+#home > .top > #star {
+  /* border: 1px solid black; */
+  width: 120px;
+  height: 30px;
+  background: rgba(10, 10, 10, 0.8);
+  display: flex;
+  border-radius: 5px;
+  margin-top: 2px;
+}
+#home > .top > #star > .star1 {
+  /* border: 1px solid black; */
+  width: 90px;
+  height: 60px;
+  position: relative;
+  bottom: 15px;
+  right: 30px;
+  background: url(../img/icons/4.png);
+  background-size: 110% 110%;
+}
+#home > .top > #star > .name {
+  /* border: 1px solid black; */
+  width: 80px;
+  height: 30px;
+  color: wheat;
+  font-size: 20px;
+  direction: ltr;
+}
+#home > .top > .name {
+  /* border: 1px solid black; */
+  width: 100px;
+  height: 30px;
+  border-radius: 10%;
+}
+#home > .top > .name > input {
+  width: 100px;
+  height: 26px;
+  color: wheat;
+  background: rgba(10, 10, 10, 0.8);
+  direction: ltr;
+  border-radius: 10%;
+  border-color: #000;
+  border-style: solid;
+}
+#home > .top > .human {
+  border: 1px solid rgb(210, 119, 63);
+  width: 55px;
+  height: 40px;
+  background: linear-gradient(
+    to bottom,
+    rgb(118, 44, 60) 0%,
+    rgb(157, 46, 24) 80%,
+    rgb(205, 203, 69) 190%
+  );
+  background-size: 100% 100%;
+  border-radius: 10%;
+}
+#home > .top > .human > .icon {
+  width: 47px;
+  height: 40px;
+  background: url(../img/icons/account.png) no-repeat 0% 50%;
+  background-size: 90% 100%;
+}
+#home > .top > .human,
+#home > .top > #star,
+#home > .top > .name {
+  position: relative;
+  right: 730px;
+}
+#home > #startFight,
+#home > .ethad,
+#home > .store {
+  border-radius: 10px;
+  width: 200px;
+  height: 110px;
+  background: linear-gradient(
+    to bottom,
+    rgb(251, 234, 4) 0%,
+    rgb(246, 122, 37) 80%,
+    rgb(211, 74, 3) 100%
+  );
+  text-align: center;
+  font-size: 40px;
+  color: #fff;
+}
+#home > #startFight > .background,
+#home > .ethad > .background,
+#home > .store > .background {
+  /* border: 1px solid black; */
+  width: 150px;
+  height: 140px;
+}
+#home > #startFight > .bold,
+#home > .ethad > .bold,
+#home > .store > .bold {
+  /* border: 1px solid rgb(250, 225, 3); */
+  border-radius: 10px;
+  width: 183px;
+  height: 87px;
+  margin: auto;
+  background: rgb(249, 162, 12);
+  line-height: 100px;
+  position: relative;
+  top: 11px;
+  text-shadow: 3px 3px 1px black;
+}
+#home > .store {
+  position: relative;
+  top: 223px;
+  right: 1253px;
+}
+#home > .store > .background {
+  position: absolute;
+  bottom: 55px;
+  left: 35px;
+  background: url(../img/icons/foroosh.png) no-repeat;
+  background-size: 100% 100%;
+}
+#home > #startFight {
+  position: relative;
+  top: 259px;
+  right: 666px;
+}
+#home > #startFight > .background {
+  position: absolute;
+  bottom: 58px;
+  left: 25px;
+  background: url(../img/icons/22.png) no-repeat;
+  background-size: 100% 100%;
+}
+#home > .ethad {
+  position: relative;
+  top: 335px;
+  right: 70px;
+}
+#home > .ethad > .background {
+  position: absolute;
+  bottom: 50px;
+  right: 20px;
+  background: url(../img/icons/6.png) no-repeat;
+  background-size: 100% 100%;
+}
+#home > .ganj {
+  
+  border-radius: 15px;
+  width: 200px;
+  height: 90px;
+  background: linear-gradient(
+    to bottom,
+    rgb(249,0,254) 0%,
+    rgb(147, 2, 204)50%,
+    rgb(43, 1, 121) 100%
+  );
+  text-align: center;
+  font-size: 40px;
+  color: #fff;
+  position: relative;
+  bottom: 100px;
+  right: 60px;
+}
+#home > .ganj > .bold {
+  border: 1px solid #c2bfbf21;
+  border-radius: 15px;
+  width: 180px;
+  height: 67px;
+  margin: auto;
+  background: rgb(178,4,254);
+  line-height: 80px;
+  position: relative;
+  top: 11px;
+  text-shadow: 3px 3px 1px black;
+  
+}
+#home > .ganj > .background{
+  /* border: 1px solid black; */
+  width: 270px;
+  height: 122px;
+  position: relative;
+  bottom: 140px;
+  left: 30px;
+  background: url(../img/icons/ganje.png) no-repeat;
+  background-size: 100% 100%;
+}
+.show {
+  display: block;
+}.hide {
+  display: block;
+}

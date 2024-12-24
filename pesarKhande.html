@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style/font.css">
+    <link rel="stylesheet" href="style/loadStart.css">
+    <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="style/fighterMenu.css">
+    <link rel="stylesheet" href="style/fightPlace.css">
+    <link rel="stylesheet" href="style/welcome.css">
+
+    <link rel="icon" href="img/icons/pesarkhande.jpg">
+    <title>pesarKhande</title>
+</head>
+
+<body>
+    <audio id="auHome" src="audio/background.MP3" play="audio"></audio>
+    <audio id="auFightPlace" src="audio/background2.MP3"></audio>
+    <audio id="auClick" src="audio/clickFight.MP3"></audio>
+    <audio id="auMenu" src="audio/menu.MP3"></audio>
+    <audio id="auItems" src="audio/items.MP3"></audio>
+    <audio id="auHomeBack" src="audio/homeBack.MP3"></audio>
+    <audio id="auSosanC1" src="audio/sosanCart1.MP3"></audio>
+    <audio id="auShabonC1" src="audio/shabonCart1.MP3"></audio>
+    <audio id="auNanjoonC1" src="audio/nqanjoonCart1.MP3"></audio>
+    <audio id="auLose" src="audio/auLose.MP3"></audio>
+    <audio id="auWel" src="audio/welcome.mp3"></audio>
+
+
+    <div id="holderLoad" class="show">
+        <div id="loading">
+            <div class="loadingBox">
+                <div id="progressBar">
+                    <div class="loadingStart"></div>
+                </div>
+                <p> ...بارگذاری</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="holder" class="hide">
+        <div id="home">
+            <div class="top">
+                <div id="menu" onclick="sevich()">
+                    <div class="icon"></div>
+                    <div id="dark1">
+                        <div id="settings">
+                            <div class="top"> تنظیمات
+                                <div id="exit"></div>
+                            </div>
+                            <div class="bottom">
+                                <div class="items1">
+                                    <div id="volume">
+                                        <h2> صدا </h2>
+                                        <label class="switch">
+                                            <input id="voise" type="checkbox" />
+                                            <span class="itemsVolume">
+
+                                                <span class="leftVolume">on</span>
+                                                <span class="rightVolume">off</span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div id="music">
+                                        <h2>موسیقی</h2>
+                                        <label class="switch1">
+                                            <input id="voise1" type="checkbox" />
+                                            <span class="itemsMusic">
+                                                <span class="leftMusic">on</span>
+                                                <span class="rightMusic">off</span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="items2">
+                                    <div class="up">
+                                        <div class="gameProducer">
+                                            <!-- <h3> Sama Sadat Sadati</h3>
+                                            <h3>
+                                                Fatemh hosseini </h3> -->
+                                        </div>
+                                        <div class="accountName">
+                                            <div class="backgroundName"></div>
+                                        </div>
+                                    </div>
+                                    <div class="main"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="subMenu">
+                        <div class="items">
+
+                            <div class="img">
+                                <img src="./img/01/2.png">
+                            </div>
+                            <div class="item">برترین ها </div>
+                        </div>
+                        <div class="items" id="itemsSetting">
+                            <div class="img">
+                                <img src="./img/01/01.png">
+                            </div>
+                            <div class="item">تنظیمات </div>
+
+                        </div>
+                        <div class="items">
+                            <div class="img">
+                                <img src="./img/01/4.png">
+                            </div>
+                            <div class="item">مبارزات اخیر </div>
+                        </div>
+                        <div class="items">
+                            <div class="img">
+                                <img src="./img/01/3.png">
+                            </div>
+                            <div class="item">تماشاخانه </div>
+                        </div>
+                        <div class="items">
+                            <div class="img">
+                                <img src="./img/01/6.png">
+                            </div>
+                            <div class="item">دنبال کردن </div>
+                        </div>
+                        <div class="items">
+                            <div class="img">
+                                <img src="./img/01/5.png">
+                            </div>
+                            <div class="item">دیگر بازی ها </div>
+                        </div>
+                        <div class="items">
+                            <div class="img">
+                                <img src="./img/01/8.png">
+                            </div>
+                            <div class="item"> سازندگان</div>
+                        </div>
+                        <div class="items">
+                            <div class="img">
+                                <img src="./img/01/7.png">
+                            </div>
+                            <div class="item">پشتیبانی </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="mony">
+                    <div class="seke"> </div>
+                    <div class="name">0 </div>
+                    <div class="plas"> </div>
+                </div>
+                <div id="diamond">
+                    <div class="seke"> </div>
+                    <div class="name">0 </div>
+                    <div class="plas"> </div>
+                </div>
+                <div id="star">
+                    <div class="name">0 </div>
+                    <div class="star1"> </div>
+                </div>
+                <div class="name">
+                    <input type="text">
+                </div>
+                <div class="human">
+                    <div class="icon"></div>
+                </div>
+            </div>
+            <div id="startFight">
+                <div class="bold"> مبارزه</div>
+                <div class="background"> </div>
+            </div>
+            <div class="ethad">
+                <div class="bold">اتحاد </div>
+                <div class="background"> </div>
+            </div>
+            <div class="store">
+                <div class="bold"> فروشگاه</div>
+                <div class="background"> </div>
+            </div>
+            <div class="ganj">
+                <div class="bold"> گنجه</div>
+                <div class="background"> </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="fighterMenu" class="hide">
+        <div class="headerMenu">
+            <div class="left">
+                <div id="homeBack"> </div>
+                <div class="name"> </div>
+                <div class="starlevel"> 1
+                    <div class="star"></div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="mony">
+                    <div class="seke"> </div>
+                    <div class="name">0 </div>
+                    <div class="plas"> </div>
+                </div>
+                <div class="diamond">
+                    <div class="seke"> </div>
+                    <div class="name">0 </div>
+                    <div class="plas"> </div>
+                </div>
+                <p> تیم شما </p>
+            </div>
+        </div>
+        <div id="stageMenu">
+            <div class="lefttMenu">
+                <div class="select">
+                </div>
+                <div class="selectCharacter">
+                    <div class="top">
+                    </div>
+                    <div class="bottom">
+                        <ul>
+                            <li class="entekhab">
+                                انتخاب
+                            </li>
+                        </ul>
+                        <div class="power01"></div>
+                    </div>
+                </div>
+                <div class="displayCharacter">
+                    <div class="player1"></div>
+                    <div class="player2"></div>
+                    <div class="player">
+                        <img src="img/character/1.png">
+                    </div>
+                    <div class="player">
+                        <img src="img/character/4.png">
+
+                    </div>
+                    <div class="player">
+                        <img src="img/character/5.png">
+                    </div>
+                    <div class="player">
+                        <img src="img/character/6.png">
+                    </div>
+                    <div class="player">
+                        <img src="img/character/7.png">
+                    </div>
+                    <div class="player">
+                        <img src="img/character/8.png">
+                    </div>
+                    <div class="player">
+                        <img src="img/character/9.png">
+                    </div>
+                    <div class="player">
+                        <img src="img/character/10.png">
+                    </div>
+                </div>
+            </div>
+            <div class="rightMenu">
+                <div class="finalCharacter">
+                    <div class="top">
+                    </div>
+                    <div class="bottom">
+                        <div id="startGame">
+                            <div id="bgGame"></div>
+                        </div>
+                        <div class="powerTeam"></div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="fightPlace">
+        <div id="headerPlace"></div>
+        <div id="gamePlace">
+            <ul class="rightCharacter">
+                <div id="dead"></div>
+                <li id="naghi">
+                    <div class="top">
+                        <div id="Energy"></div>
+                        <div class="bg"></div>
+                        <div id="point3">200</div>
+                    </div>
+                    <div id="naghiFace"></div>
+                    <div id="naghiGun"></div>
+                    <div id="blood"></div>
+                </li>
+            </ul>
+            <ul class="leftCharacter">
+                <li id="shabon">
+                    <div class="top">
+                        <div id="Energy"></div>
+                        <div class="bg"></div>
+                        <div id="point">200</div>
+                    </div>
+                    <div id="shabonFace"></div>
+                    <div id="shabonFace1"></div>
+                    <div id="selah1"></div>
+                    <div id="selah2"></div>
+                </li>
+                <li id="nanjoon">
+                    <div class="top">
+                        <div id="Energy1"></div>
+                        <div class="bg"></div>
+                        <div id="point1">200</div>
+                    </div>
+                    <div id="nanjoonFace"></div>
+                    <div id="nanjoonFace1"> </div>
+                    <div id="boom1"></div>
+                </li>
+                <li id="sosan">
+                    <div class="top">
+                        <div id="Energy2"></div>
+                        <div class="bg"></div>
+                        <div id="point2">200</div>
+                    </div>
+                    <div id="sosanFace"></div>
+                    <div id="sosanFace1"></div>
+                    <div id="boom2"></div>
+                </li>
+            </ul>
+        </div>
+        <div id="itemsFighter">
+            <div class="face1"></div>
+            <div class="bg">
+                <div id="shabonCart1"></div>
+                <div id="shabonCart2"></div>
+            </div>
+
+            <div class="face2"></div>
+            <div class="bg">
+                <div id="nanjoonCart1"></div>
+                <div id="nanjoonCart2"></div>
+            </div>
+
+            <div class="face3"></div>
+            <div class="bg">
+                <div id="sosanCart1"></div>
+                <div id="sosanCart2"></div>
+            </div>
+
+
+        </div>
+
+    </div>
+    
+        <div id="win">
+            <img id="winImg" src="img/icons/p4.png" />
+            <div id="reload"><img id="reImg" src="img/icons/reload.png" /></div>
+          </div>
+
+</body>
+
+</html>
+<script>
+
+    /* change level */
+    var start1 = document.getElementById("startFight");
+    setTimeout((x) => {
+        holderLoad.style.display = "none";
+        holder.style.display = "block";
+        auHome.play();
+    }, 6000);
+
+    start1.addEventListener("click", () => {
+        holder.style.display = "none";
+        fighterMenu.style.display = "block";
+        auClick.play()
+    });
+
+    var hback = document.getElementById("homeBack");
+    hback.addEventListener("click", () => {
+        fighterMenu.style.display = "none";
+        holder.style.display = "block";
+        auHomeBack.play();
+        auHome.play();
+    });
+    var start2 = document.getElementById("startGame");
+    start2.addEventListener("click", () => {
+        fighterMenu.style.display = "none";
+        fightPlace.style.display = "block";
+        auClick.play();
+    });
+    /* menu */
+    var pos = 0;
+
+    function sevich() {
+        if (pos == 0) {
+            subMenu.style.display = "block";
+            subMenu.style.display = "flex";
+            dark1.style.display = "block";
+            settings.style.display = "none";
+            pos = 1;
+            auMenu.play();
+        } else if (pos == 1) {
+            subMenu.style.display = "none";
+            dark1.style.display = "none";
+            pos = 0;
+        }
+    }
+    itemsSetting.onclick = function () {
+        if (pos == 1) {
+            dark1.style.display = "block";
+            settings.style.display = "block";
+            subMenu.style.display = "none";
+            auMenu.play();
+            pos = 2;
+        }
+    };
+    exit.onclick = function () {
+        if (pos == 2) {
+            dark1.style.display = "none";
+            auMenu.play();
+            pos = 1;
+        }
+    };
+    /* volume on / off */
+    var volume = 0;
+    voise.onclick = function () {
+        if (volume == 0) {
+            auMenu.pause();
+            auClick.pause();
+            auHomeBack.pause();
+            voise.className = "rightVolume";
+            volume = 1;
+        } else if (volume == 1) {
+            auMenu.play();
+            voise.className = "leftVolume";
+            volume = 0;
+        }
+    };
+    /* music on / off */
+    var music = 0;
+    voise1.onclick = function () {
+        if (music == 0) {
+            auHome.play();
+            voise1.className = "rightMusic";
+            music = 1;
+        } else if (music == 1) {
+            auHome.pause();
+            voise1.className = "leftMusic";
+            music = 0;
+        }
+    };
+
+    /* play game */
+
+    let leftt = 0;
+
+    var sosanC1 = document.getElementById("sosanCart1");
+    sosanC1.addEventListener('click', () => {
+        auSosanC1.play()
+        sosanFace.style.display = "none"
+        sosanFace1.style.display = "block"
+        leftt += 30;
+        Energy.style.left = leftt + "px";
+
+        setTimeout(function () {
+            document.getElementById("point3").innerHTML = 200 - leftt;
+        }, 7000)
+        setTimeout(() => {
+            sosanFace.style.display = "block"
+            sosanFace1.style.display = "none"
+        }, 1600)
+
+        setTimeout(() => { boom2.style.display = "block" }, 700)
+        setTimeout(() => { boom2.style.display = "none" }, 1400)
+        setTimeout(() => { blood.style.display = "block" }, 900)
+        setTimeout(() => { blood.style.display = "none" }, 1300)
+
+
+    })
+    var nanjoonC1 = document.getElementById("nanjoonCart1")
+    nanjoonC1.addEventListener('click', () => {
+        auNanjoonC1.play()
+        nanjoonFace.style.display = "none"
+        nanjoonFace1.style.display = "block"
+
+        leftt += 50;
+        Energy.style.left = leftt + "px";
+
+        setTimeout(function () {
+            document.getElementById("point3").innerHTML = 200 - leftt;
+        }, 7000)
+
+        setTimeout(() => {
+            nanjoonFace.style.display = "block"
+            nanjoonFace1.style.display = "none"
+        }, 1500)
+
+        setTimeout(() => { boom1.style.display = "block" }, 700)
+        setTimeout(() => { boom1.style.display = "none" }, 1200)
+    })
+
+    var shabonC1 = document.getElementById("shabonCart1")
+    shabonC1.addEventListener('click', () => {
+        auShabonC1.play()
+        shabonFace.style.display = "none"
+        shabonFace1.style.display = "block"
+
+        leftt += 40;
+        Energy.style.left = leftt + "px";
+
+        setTimeout(function () {
+            document.getElementById("point3").innerHTML = 200 - leftt;
+        }, 7000)
+
+        setTimeout(() => {
+            shabonFace.style.display = "block"
+            shabonFace1.style.display = "none"
+        }, 1600)
+    })
+
+    cartAll = document.getElementById("itemsFighter")
+    cartAll.addEventListener('click', () => {
+        setTimeout(() => {
+            if (leftt >= 200) {
+
+                naghi.style.display = "none"
+                dead.style.display = "block"
+                dead.style.transfrom = "scale(1.5)"
+
+
+                setTimeout(() => {
+                    win.style.display = "block"
+                
+                
+                }, 900)
+
+                setTimeout(() => {
+                    back.style.display = "block"
+                }, 1700)
+            }
+        }, 800)
+    })
+
+    var back = document.getElementById("reload")
+    back.addEventListener('click', () => {
+        window.location.reload();
+
+    })
+
+</script>

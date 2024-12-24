@@ -1,0 +1,496 @@
+#fightPlace {
+  display: none;
+  border: 1px solid #ccc;
+  height: 700px;
+  width: 100%;
+  background: url(../img/bg/bg05.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+#fightPlace > #headerPlace {
+  /* border: 1px solid #ccc; */
+  height: 120px;
+  width: 100%;
+}
+#fightPlace > #gamePlace {
+  /* border: 1px solid rgb(253, 5, 5); */
+  height: 400px;
+  display: flex;
+  gap: 70px;
+}
+#win {
+  display: none;
+  width: 100%;
+  height: 700px;
+  display: none;
+  background: black;
+  opacity: 0.8;
+  z-index: 3;
+
+  position: absolute;
+  top: 0px;
+}
+#winImg {
+  height: 70%;
+  margin: 50px auto;
+  display: block;
+}
+#win #reload {
+  width: 70px;
+  height: 67px;
+  border: 1px solid #fff;
+  background: #fff;
+  border-radius: 12px 1px 20px 1px;
+
+  position: absolute;
+  
+  left: 790px;
+}
+#win #reload #reImg {
+  width: 100%;
+  height: 100%;
+}
+#win #reload:hover #reImg {
+  transform: scale(1.3) rotate(30deg);
+  transition: 1s;
+}
+
+#fightPlace > #gamePlace > .rightCharacter {
+  /* border: 1px solid #ccc; */
+  height: 400px;
+  width: 45%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+#fightPlace > #gamePlace > .rightCharacter > #dead {
+  /* border: 1px solid #fff; */
+  display: none;
+  height: 200px;
+  width: 200px;
+  background: url(../img/icons/dead.png);
+  background-size: 100% 100%;
+  position: absolute;
+  bottom: 15px;
+  transition: 0.7s;
+}
+#fightPlace > #gamePlace > .rightCharacter > #naghi {
+  /* border: 1px solid green; */
+  width: 250px;
+  position: relative;
+}
+#fightPlace > #gamePlace > .rightCharacter > #naghi > #naghiFace {
+  /* border: 1px solid; */
+  height: 318px;
+  background: url(../img/character/naghipasbon/012.gif);
+  background-size: 100% 100%;
+}
+#fightPlace > #gamePlace > .rightCharacter > #naghi > #blood {
+  /* border: 1px solid #ccc; */
+  display: none;
+  width: 100px;
+  height: 100px;
+  background: url(../img/icons/blood.png);
+  background-size: 100% 100%;
+  position: absolute;
+  top: 170px;
+  left: 80px;
+}
+#fightPlace > #gamePlace > .rightCharacter > #naghi > .top {
+  /* border: 1px solid #ccc; */
+  height: 80px;
+  width: 185px;
+  position: relative;
+}
+#fightPlace > #gamePlace > .rightCharacter > #naghi > .top > #Energy {
+  /* border: 1px solid red; */
+  height: 24px;
+  /* width: 185px; */
+  background: linear-gradient(
+    to top,
+    rgba(210, 43, 43, 255) 50%,
+    rgba(219, 85, 85, 255) 50%
+  );
+  border-radius: 20px;
+  position: absolute;
+  top: 31px;
+  left: 0px;
+  right: 0px;
+}
+#fightPlace > #gamePlace > .rightCharacter > #naghi > .top > #point3 {
+  /* border: 1px solid #ccc; */
+  width: 50px;
+  height: 25px;
+  text-align: center;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 0px;
+  left: 65px;
+  line-height: 27px;
+  font-family: bhoma;
+  font-size: 20px;
+  color: rgba(219, 85, 85, 255);
+  text-shadow: 1px 1px 2px pink;
+  transition: 0.5s;
+}
+#fightPlace > #gamePlace > .rightCharacter > #naghi > .top > .bg {
+  height: 60px;
+  width: 200px;
+  background: url(../img/character/power.png) no-repeat;
+  background-size: 110% 110%;
+  position: absolute;
+  right: 0px;
+  bottom: 13px;
+}
+
+#fightPlace > #gamePlace > .leftCharacter {
+  /* border: 1px solid #ccc; */
+  height: 400px;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+#fightPlace > #gamePlace > .leftCharacter > #shabon {
+  /* border: 1px solid green; */
+  width: 250px;
+}
+#fightPlace > #gamePlace > .leftCharacter > #shabon > #shabonFace {
+  /* border: 1px solid; */
+  display: block;
+  height: 318px;
+  background: url(../img/character/shabon/013.gif);
+  background-size: 100% 100%;
+}
+#fightPlace > #gamePlace > .leftCharacter > #shabon > #shabonFace1 {
+  /* border: 1px solid; */
+  display: none;
+  height: 318px;
+  background: url(../img/character/shabon/014.gif);
+  background-size: 100% 100%;
+}
+#fightPlace > #gamePlace > .leftCharacter > #shabon > .top,
+#fightPlace > #gamePlace > .leftCharacter > #nanjoon > .top,
+#fightPlace > #gamePlace > .leftCharacter > #sosan > .top {
+  /* border: 1px solid #ccc; */
+  height: 80px;
+  width: 185px;
+  position: relative;
+}
+#fightPlace > #gamePlace > .leftCharacter > #shabon > .top > #Energy {
+  /* border: 1px solid red; */
+  height: 24px;
+  /* width: 185px; */
+  background: linear-gradient(
+    to top,
+    rgba(52, 219, 123, 255) 50%,
+    rgba(93, 226, 149, 255) 50%
+  );
+  border-radius: 20px;
+  position: absolute;
+  top: 31px;
+  left: 0px;
+  right: 0px;
+}
+#fightPlace > #gamePlace > .leftCharacter > #shabon > .top > #point {
+  /* border: 1px solid #ccc; */
+  width: 50px;
+  height: 25px;
+  text-align: center;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 0px;
+  left: 65px;
+  line-height: 27px;
+  font-family: bhoma;
+  font-size: 20px;
+  color: rgba(52, 219, 123, 255);
+  text-shadow: 1px 1px 2px pink;
+}
+#fightPlace > #gamePlace > .leftCharacter > #shabon > .top > .bg,
+#fightPlace > #gamePlace > .leftCharacter > #nanjoon > .top > .bg,
+#fightPlace > #gamePlace > .leftCharacter > #sosan > .top > .bg {
+  height: 60px;
+  width: 200px;
+  background: url(../img/character/power.png) no-repeat;
+  background-size: 110% 110%;
+  position: absolute;
+  right: 0px;
+  bottom: 13px;
+}
+#fightPlace > #gamePlace > .leftCharacter > #nanjoon {
+  /* border: 1px solid green; */
+  width: 250px;
+  position: relative;
+}
+#fightPlace > #gamePlace > .leftCharacter > #nanjoon > #boom1 {
+  /* border: 1px solid #ccc; */
+  display: none;
+  height: 60px;
+  width: 70px;
+  background: url(../img/icons/boom2.gif) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 190px;
+  left: 210px;
+}
+#fightPlace > #gamePlace > .leftCharacter > #nanjoon > #nanjoonFace {
+  /* border: 1px solid; */
+  display: block;
+  height: 318px;
+  background: url(../img/character/nanjoon/011.gif);
+  background-size: 100% 100%;
+}
+#fightPlace > #gamePlace > .leftCharacter > #nanjoon > #nanjoonFace1 {
+  /* border: 1px solid; */
+  display: none;
+  height: 318px;
+  background: url(../img/character/nanjoon/013.gif);
+  background-size: 110% 100%;
+  position: relative;
+  left: -10px;
+}
+#fightPlace > #gamePlace > .leftCharacter > #nanjoon > .top > #Energy1 {
+  /* border: 1px solid red; */
+  height: 24px;
+  /* width: 185px; */
+  background: linear-gradient(
+    to top,
+    rgba(52, 219, 123, 255) 50%,
+    rgba(93, 226, 149, 255) 50%
+  );
+  border-radius: 20px;
+  position: absolute;
+  top: 31px;
+  left: 0px;
+  right: 0px;
+}
+#fightPlace > #gamePlace > .leftCharacter > #nanjoon > .top > #point1 {
+  /* border: 1px solid #ccc; */
+  width: 50px;
+  height: 25px;
+  text-align: center;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 0px;
+  left: 65px;
+  line-height: 27px;
+  font-family: bhoma;
+  font-size: 20px;
+  color: rgba(52, 219, 123, 255);
+  text-shadow: 1px 1px 2px pink;
+}
+#fightPlace > #gamePlace > .leftCharacter > #sosan {
+  /* border: 1px solid green; */
+  width: 250px;
+  position: relative;
+}
+#fightPlace > #gamePlace > .leftCharacter > #sosan > #boom2 {
+  /* border: 1px solid #ccc; */
+  display: none;
+  height: 60px;
+  width: 70px;
+  background: url(../img/icons/boom2.gif) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 110px;
+  left: 210px;
+}
+
+#fightPlace > #gamePlace > .leftCharacter > #sosan > #sosanFace {
+  /* border: 1px solid; */
+  display: block;
+  height: 318px;
+  background: url(../img/character/sosan/013.gif);
+  background-size: 100% 100%;
+}
+#fightPlace > #gamePlace > .leftCharacter > #sosan > #sosanFace1 {
+  /* border: 1px solid; */
+  display: none;
+  height: 318px;
+  background: url(../img/character/sosan/011.gif);
+  background-size: 100% 100%;
+}
+#fightPlace > #gamePlace > .leftCharacter > #sosan > .top > #Energy2 {
+  /* border: 1px solid red; */
+  height: 24px;
+  /* width: 185px; */
+  background: linear-gradient(
+    to top,
+    rgba(52, 219, 123, 255) 50%,
+    rgba(93, 226, 149, 255) 50%
+  );
+  border-radius: 20px;
+  position: absolute;
+  top: 31px;
+  left: 0px;
+  right: 0px;
+}
+#fightPlace > #gamePlace > .leftCharacter > #sosan > .top > #point2 {
+  /* border: 1px solid #ccc; */
+  width: 50px;
+  height: 25px;
+  text-align: center;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 0px;
+  left: 65px;
+  line-height: 27px;
+  font-family: bhoma;
+  font-size: 20px;
+  color: rgba(52, 219, 123, 255);
+  text-shadow: 1px 1px 2px pink;
+}
+#fightPlace > #itemsFighter {
+  /* border: 1px solid #ccc; */
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  gap: 10px;
+}
+#fightPlace > #itemsFighter > .face1 {
+  border: 4px solid #fff;
+  height: 120px;
+  width: 130px;
+  background: url(../img/character/13.png) no-repeat;
+  background-size: 100% 100%;
+  border-radius: 20px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+#fightPlace > #itemsFighter > .face2 {
+  border: 4px solid #fff;
+  height: 120px;
+  width: 130px;
+  background: url(../img/character/12.png) no-repeat;
+  background-size: 100% 100%;
+  border-radius: 20px;
+  position: relative;
+  top: 10px;
+}
+#fightPlace > #itemsFighter > .face3 {
+  border: 4px solid #fff;
+  height: 120px;
+  width: 130px;
+  background: url(../img/character/11.png) no-repeat;
+  background-size: 100% 100%;
+  border-radius: 20px;
+  position: relative;
+  top: 10px;
+}
+#fightPlace > #itemsFighter > .bg {
+  /* border: 2px solid #ccc; */
+  direction: ltr;
+  width: 300px;
+  background: url(../img/icons/02.png) no-repeat 60%;
+  background-size: 110% 110%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 18px;
+}
+#fightPlace > #itemsFighter > .bg > #sosanCart1:hover,
+#fightPlace > #itemsFighter > .bg > #sosanCart2:hover,
+#fightPlace > #itemsFighter > .bg > #nanjoonCart1:hover,
+#fightPlace > #itemsFighter > .bg > #nanjoonCart2:hover,
+#fightPlace > #itemsFighter > .bg > #shabonCart1:hover,
+#fightPlace > #itemsFighter > .bg > #shabonCart2:hover {
+  border: 2px solid rgba(82, 241, 87, 0.56);
+  transform: scale(1.2) rotate(360deg);
+  box-shadow: rgba(82, 241, 87, 0.56) 0px 22px 70px 4px;
+  transition: 0.5s;
+}
+
+#fightPlace > #itemsFighter > .bg > #sosanCart1 {
+  border: 1px solid #ccc;
+  height: 110px;
+  width: 100px;
+  background: url(../img/cart/05.png) no-repeat;
+  background-size: 100% 100%;
+  transition: 1s;
+}
+#fightPlace > #itemsFighter > .bg > #sosanCart2 {
+  border: 1px solid #ccc;
+  height: 110px;
+  width: 100px;
+  background: url(../img/cart/06.png) no-repeat;
+  background-size: 100% 100%;
+  transition: 1s;
+}
+#fightPlace > #itemsFighter > .bg > #nanjoonCart1 {
+  border: 1px solid #ccc;
+  height: 110px;
+  width: 100px;
+  background: url(../img/cart/03.png) no-repeat;
+  background-size: 100% 100%;
+  transition: 1s;
+}
+#fightPlace > #itemsFighter > .bg > #nanjoonCart2 {
+  border: 1px solid #ccc;
+  height: 110px;
+  width: 100px;
+  background: url(../img/cart/04.png) no-repeat;
+  background-size: 100% 100%;
+  transition: 1s;
+}
+#fightPlace > #itemsFighter > .bg > #shabonCart1 {
+  border: 1px solid #ccc;
+  height: 110px;
+  width: 100px;
+  background: url(../img/cart/01.png) no-repeat;
+  background-size: 100% 100%;
+  transition: 1s;
+}
+#fightPlace > #itemsFighter > .bg > #shabonCart2 {
+  border: 1px solid #ccc;
+  height: 110px;
+  width: 100px;
+  background: url(../img/cart/02.png) no-repeat;
+  background-size: 100% 100%;
+  transition: 1s;
+}
+
+/* character animaion */
+
+@keyframes shabonjoon {
+  0% {
+    background: url(../img/character/shabon/20.png) no-repeat;
+    background-size: 100% 100%;
+  }
+  0% {
+    background: url(../img/character/shabon/21.png) no-repeat;
+    background-size: 100% 100%;
+  }
+  0% {
+    background: url(../img/character/shabon/22.png) no-repeat;
+    background-size: 100% 100%;
+  }
+
+  0% {
+    background: url(../img/character/shabon/23.png) no-repeat;
+    background-size: 100% 100%;
+  }
+  0% {
+    background: url(../img/character/shabon/24.png) no-repeat;
+    background-size: 100% 100%;
+  }
+  0% {
+    background: url(../img/character/shabon/25.png) no-repeat;
+    background-size: 100% 100%;
+  }
+  0% {
+    background: url(../img/character/shabon/26.png) no-repeat;
+    background-size: 100% 100%;
+  }
+  0% {
+    background: url(../img/character/shabon/27.png) no-repeat;
+    background-size: 100% 100%;
+  }
+}

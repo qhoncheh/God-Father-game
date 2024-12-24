@@ -1,0 +1,75 @@
+
+
+
+body {
+  margin: 0;
+}
+#holderLoad {
+  /* border: 1px solid purple; */
+  display:block;
+  height: 700px;
+  width: 100%;
+  margin: auto;
+  font-family: bhoma;
+}
+#loading {
+  /* border: 1px solid #ccc; */
+
+  height: 100%;
+  background: url(../img/bg/bg04.jpg) no-repeat 50% 1%;
+  background-size: 100% 100%;
+
+}
+.loadingBox {
+  height: 160px;
+  background: rgba(0, 0, 0, 0.632);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 77%;
+  color: #fff;
+}
+#progressBar {
+  width: 1200px;
+  height: 7px;
+  background: #252423;
+  border-radius: 5px;
+  position: relative;
+}
+.loadingStart {
+  height: 100%;
+  /* border-radius: 0 5px 5px 0; */
+  background: rgb(255, 5, 5);
+  position: absolute;
+  left: 0;
+  animation: loadingStart 3.5s ease-in;
+}
+#loading > .loadingBox > p {
+  /* border: 1px solid #ccc; */
+  position: absolute;
+  bottom: 10px;
+}
+@keyframes loadingStart {
+  0% {
+    width: 0;
+    background: red;
+  }
+  25% {
+    width: 50%;
+    background: yellow;
+  }
+  65% {
+    width: 75%;
+    background: orange;
+  }
+  100% {
+    width: 100%;
+    background: red;
+  }
+}
+.show {
+  display: block;
+}.hide {
+  display: none;
+}

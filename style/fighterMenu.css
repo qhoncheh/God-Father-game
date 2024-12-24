@@ -1,0 +1,327 @@
+#fighterMenu {
+  display: none;
+  height: 634px;
+  width: 100%;
+  font-family: bhoma;
+  background: url(/img/bg/bg01.jpg);
+  cursor: url(../img/icons/cursor.png), auto;
+  position: relative;
+}
+/* header */
+.headerMenu {
+  height: 70px;
+  display: flex;
+  flex-flow: row-reverse;
+  background: url(../img/bg/bg01.jpg);
+}
+#fighterMenu > .headerMenu > .right {
+  height: 70px;
+  width: 60%;
+  display: flex;
+  direction: rtl;
+  gap: 30px;
+}
+#fighterMenu > .headerMenu > .right > .mony,
+#fighterMenu > .headerMenu > .right > .diamond {
+  width: 150px;
+  height: 35px;
+  border-radius: 5px;
+  display: flex;
+  background: rgba(10, 10, 10, 0.8);
+  margin: 15px;
+}
+#fighterMenu > .headerMenu > .right > .diamond > .seke,
+#fighterMenu > .headerMenu > .right > .mony > .seke {
+  width: 50px;
+  height: 40px;
+  position: relative;
+  bottom: 10px;
+}
+#fighterMenu > .headerMenu > .right > .diamond > .seke {
+  background: url(../img/icons/almas.png) no-repeat;
+  background-size: 100% 100%;
+}
+#fighterMenu > .headerMenu > .right > .mony > .seke {
+  background: url(../img/icons/seke.png) no-repeat;
+  background-size: 100% 100%;
+}
+#fighterMenu > .headerMenu > .right > .mony > .name,
+#fighterMenu > .headerMenu > .right > .diamond > .name {
+  width: 100px;
+  height: 28px;
+  position: relative;
+  right: 30px;
+  top: 5px;
+  color: wheat;
+  font-size: 20px;
+  font-weight: 900;
+}
+#fighterMenu > .headerMenu > .right > .diamond > .plas,
+#fighterMenu > .headerMenu > .right > .mony > .plas {
+  width: 40px;
+  height: 30px;
+  background: url(../img/icons/Awicons-Vista-Artistic-Add.48.png);
+  background-size: 100% 100%;
+  position: relative;
+  right: 20px;
+}
+#fighterMenu > .headerMenu > .left {
+  height: 70px;
+  width: 40%;
+  display: flex;
+  direction: ltr;
+  gap: 30px;
+}
+#fighterMenu > .headerMenu > .left > #homeBack {
+  height: 70px;
+  width: 85px;
+  margin: 10px;
+  background: url(../img/icons/back.png) no-repeat;
+  background-size: 80%;
+}
+#fighterMenu > .headerMenu > .left > .starlevel {
+  height: 35px;
+  width: 120px;
+  margin-top: 16px;
+  background: url(/img/icons/4.png) no-repeat 1% 45% rgba(0, 0, 0, 0.8);
+  background-size: 50px;
+  border-radius: 8px;
+  color: #fff;
+  text-align: center;
+  line-height: 35px;
+  font-weight: 900;
+  font-size: 20px;
+}
+#fighterMenu > .headerMenu > .left > .starlevel > .star {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  bottom: 50px;
+  right: 30px;
+  background: url(../img/icons/4.png);
+  background-size: 100% 100%;
+}
+#fighterMenu > .headerMenu > .left > .name {
+  height: 35px;
+  width: 120px;
+  margin-top: 16px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+}
+#fighterMenu > .headerMenu > .right > p {
+  border: 5px solid rgb(16, 13, 13);
+  height: 50px;
+  width: 200px;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  right: 60px;
+  bottom: 20px;
+  background: rgb(96, 93, 93);
+  text-align: center;
+  color: #fff;
+  line-height: 50px;
+  font-size: 30px;
+  margin-top: 35px;
+  background: linear-gradient(
+    180deg,
+    rgba(83, 79, 79, 0.6),
+    rgba(15, 15, 15, 0.8) 50%,
+    rgba(83, 79, 79, 0.6)
+  );
+}
+
+/* Stage Menu */
+
+#stageMenu {
+  width: 100%;
+  height: 650px;
+  margin: auto;
+  display: flex;
+  flex-flow: row-reverse;
+  gap: 10px;
+  background: url(../img/bg/bg01.jpg);
+  position: relative;
+}
+#stageMenu > .select {
+  width: 50px;
+  height: 100px;
+  position: absolute;
+  left: 600px;
+  top: 430px;
+}
+
+#stageMenu > .lefttMenu {
+  border: 5px solid rgb(16, 13, 13);
+  width: 40%;
+  height: 610px;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  background: rgb(129, 112, 96);
+  margin-left: 13px;
+  position: relative;
+}
+#stageMenu > .lefttMenu > .selectCharacter {
+  width: 320px;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+#stageMenu > .lefttMenu > .selectCharacter > .top {
+  width: 300px;
+  height: 367px;
+  margin: 5px 5px 0 0;
+  background: url(../img/character/select01.png) no-repeat 30%;
+  background-size: 90% 100%;
+}
+
+#stageMenu > .lefttMenu > .selectCharacter > .bottom {
+  width: 250px;
+  height: 180px;
+}
+#stageMenu > .lefttMenu > .selectCharacter > .bottom > ul {
+  /* border: 1px solid; */
+  height: 45px;
+  width: 128%;
+  background: rgba(0, 0, 0, 0.553);
+  margin: 0;
+  margin-top: 15px;
+  padding: 0;
+  list-style: none;
+  z-index: 0;
+}
+#stageMenu > .lefttMenu > .selectCharacter > .bottom > ul > li {
+  border: 3px solid rgba(0, 0, 0, 0.797);
+  height: 55px;
+  width: 220px;
+  background: linear-gradient(
+    to bottom,
+    #b7c907 20%,
+    #b3c605ee 40%,
+    #606d0a 70%
+  );
+  position: relative;
+  top: -7px;
+  right: 40px;
+  border-radius: 7px;
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  line-height: 50px;
+}
+#stageMenu > .lefttMenu > .selectCharacter > .bottom > .power01 {
+  /* border: 1px solid; */
+  height: 180px;
+  width: 320px;
+  background: url(../img/character/power01.png) no-repeat 55%;
+  background-size: 90% 90%;
+}
+#stageMenu > .lefttMenu > .displayCharacter {
+  width: 280px;
+  height: 97%;
+  margin-top: 5px;
+
+  border-radius: 8px;
+  background: linear-gradient(
+    270deg,
+    rgba(7, 7, 7, 0.6),
+    rgba(131, 113, 113, 0.8) 50%,
+    rgba(7, 7, 7, 0.6)
+  );
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  overflow: hidden;
+}
+#stageMenu > .lefttMenu > .displayCharacter > .player1 {
+  width: 125px;
+  height: 125px;
+  margin-top: 20px;
+  background: url(../img/character/3.png) no-repeat;
+  background-size: 80%;
+  border-radius: 15px;
+}
+#stageMenu > .lefttMenu > .displayCharacter > .player2 {
+  width: 140px;
+  height: 150px;
+  margin-left: 5px;
+  margin-top: 4px;
+  background: url(../img/character/2.png) no-repeat 80%;
+  background-size: 90%;
+  border-radius: 15px;
+  border-bottom-left-radius: 25.5%;
+  border-top-left-radius: 20%;
+}
+#stageMenu > .lefttMenu > .displayCharacter > .player {
+  width: 100px;
+  height: 100px;
+  margin: 7px;
+}
+#stageMenu > .lefttMenu > .displayCharacter > .player > img {
+  width: 100px;
+  height: 100px;
+}
+#stageMenu > .rightMenu {
+  border: 5px solid black;
+  width: 56%;
+  height: 610px;
+  border-radius: 10px;
+  background: rgb(96, 93, 93);
+}
+#stageMenu > .rightMenu > .finalCharacter > .top {
+  border-bottom: 2.5px solid rgba(0, 0, 0, 0.272);
+  height: 400px;
+  background: url(../img/character/charactes01.gif) no-repeat 50% 0%;
+  background-size: 90% 100%;
+}
+#stageMenu > .rightMenu > .finalCharacter > .bottom {
+  /* border: 1px solid #fff; */
+  width: 740px;
+  height: 206px;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 15px;
+}
+#stageMenu > .rightMenu > .finalCharacter > .bottom > #startGame {
+  border: 10px solid rgba(0, 0, 0, 0.557);
+  height: 83%;
+  width: 340px;
+  background: rgba(57, 54, 53, 255);
+  border-radius: 20px;
+  box-shadow: inset 1px 4px 15px 1px #555;
+  margin-top: 5px;
+  margin-right: 20px;
+}
+#stageMenu > .rightMenu > .finalCharacter > .bottom > #startGame > #bgGame {
+  height: 100%;
+  width: 100%;
+  background: url(../img/icons/fight.png) no-repeat 40% 30%;
+  background-size: 104% 108%;
+}
+#stageMenu
+  > .rightMenu
+  > .finalCharacter
+  > .bottom
+  > #startGame
+  > #bgGame::after {
+  transform: scale(-1.5);
+}
+#stageMenu > .rightMenu > .finalCharacter > .bottom > .powerTeam {
+  /* border: 1px solid ; */
+  width: 340px;
+  height: 98%;
+  background: url(../img/character/power02.png);
+  background-size: 100% 100%;
+}
+#stageMenu > .lefttMenu > .select {
+  /* border: 1px solid #fff; */
+  width: 85px;
+  height: 220px;
+  background: url(../img/icons/select.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom: -5px;
+  right: -80px;
+  z-index: 10000;
+}
